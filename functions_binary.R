@@ -167,6 +167,6 @@ fn_dr = function(data,omega_hat,m.s,m.t){
   
   names(beta_iw) = c("Intercept", "Xt", paste0("Z",1:p,"t"))
   result= data.frame(estimate.iw = beta_iw, estimate.im = beta_im, estimate.dr = beta_dr, 
-                     se.iw = b.se.iw, se.im = b.se.iw, se.dr = b.se.dr)
+                     se.iw = b.se.iw, se.im = b.se.im, se.dr = b.se.dr)
   return(result)
 }
